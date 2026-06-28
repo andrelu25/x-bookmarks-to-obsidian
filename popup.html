@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>X Bookmarks to Obsidian</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <div>
+          <h1>X Bookmarks</h1>
+          <p id="settingsSummary">读取设置中...</p>
+        </div>
+        <button id="openOptions" class="icon-button" type="button" title="设置">⚙</button>
+      </header>
+
+      <section class="actions">
+        <button id="collectButton" type="button">抓取当前页</button>
+        <button id="saveButton" type="button" disabled>保存选中</button>
+      </section>
+
+      <p id="status" class="status">打开 X 书签页后点击抓取。</p>
+
+      <section id="list" class="list" aria-live="polite"></section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

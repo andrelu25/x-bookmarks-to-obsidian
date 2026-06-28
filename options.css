@@ -1,0 +1,69 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #172026;
+  background: #f8faf9;
+}
+
+.settings {
+  display: grid;
+  gap: 16px;
+  max-width: 560px;
+  margin: 48px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  color: #52615c;
+  font-size: 13px;
+}
+
+input {
+  min-height: 38px;
+  border: 1px solid #b8c4c0;
+  border-radius: 6px;
+  padding: 0 10px;
+  color: #172026;
+  background: #ffffff;
+  font: inherit;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  min-height: 38px;
+  border: 1px solid #173b57;
+  border-radius: 6px;
+  padding: 0 14px;
+  background: #173b57;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#testConnection {
+  border-color: #b8c4c0;
+  background: #ffffff;
+  color: #172026;
+}
+
+.status {
+  min-height: 20px;
+  margin: 0;
+  color: #52615c;
+}

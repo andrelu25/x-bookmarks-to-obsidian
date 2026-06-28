@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>X Bookmarks to Obsidian 设置</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="settings">
+      <h1>Obsidian 设置</h1>
+      <label>
+        API Base URL
+        <input id="apiBaseUrl" type="url" spellcheck="false">
+      </label>
+      <label>
+        API Key
+        <input id="apiKey" type="password" spellcheck="false">
+      </label>
+      <label>
+        保存文件夹
+        <input id="folder" type="text" spellcheck="false">
+      </label>
+      <div class="actions">
+        <button id="saveSettings" type="button">保存设置</button>
+        <button id="testConnection" type="button">测试连接</button>
+      </div>
+      <p id="status" class="status"></p>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

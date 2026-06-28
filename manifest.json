@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "X Bookmarks to Obsidian",
+  "description": "Select visible X bookmarks and save them as Obsidian notes.",
+  "version": "0.1.0",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*",
+    "http://127.0.0.1:27123/*",
+    "https://127.0.0.1:27124/*"
+  ],
+  "action": {
+    "default_title": "Save X bookmarks",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options.html"
+}
